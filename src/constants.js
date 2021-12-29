@@ -6,11 +6,6 @@ export const urls = {
   contact: '/contact'
 }
 
-export const social = {
-  "facebook": "https://www.facebook.com",
-  "twitter": "https://www.twitter.com"
-}
-
 export const mainColors = {
   white: '#FFFFFF',
   shadow: 'rgba(0, 0, 0, 0.161)',
