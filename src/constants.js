@@ -19,6 +19,7 @@ export const mainColors = {
 
 export const sizes = {
   defaultContainer: 1600,
+  headerHeight: 88
 }
 
 export const breakPoints = {

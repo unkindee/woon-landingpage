@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { NavLink } from 'react-router-dom'
 import { Navbar, Nav } from 'react-bootstrap'
-import { breakPoints, mainColors, urls } from '../constants'
+import { breakPoints, mainColors, sizes, urls } from '../constants'
 import Page from '../components/Page'
 import IconButton from '../components/IconButton'
 import SearchInput from '../components/SearchInput'
@@ -39,7 +39,7 @@ const StyledHeader = styled.header`
 `
 
 const StyledNavBar = styled(Navbar)`
-  height: 88px;
+  height: ${sizes.headerHeight}px;
   position: relative;
 
   #basic-navbar-nav {
@@ -50,7 +50,7 @@ const StyledNavBar = styled(Navbar)`
       box-shadow: 0px 3px 6px ${mainColors.shadow};
       padding: 12px 0;
       position: absolute;
-      top: 88px;
+      top:  ${sizes.headerHeight}px;
       left: -12px;
       right: -12px;
     }

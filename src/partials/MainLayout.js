@@ -1,13 +1,19 @@
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import Header from './Header'
 import Footer from './Footer'
+import { sizes } from '../constants'
+
+const StyledMain = styled.main`
+  padding-top: ${sizes.headerHeight}px;
+`
 
 const MainLayout = (props) => (
   <>
     <Header />
-    <main>
+    <StyledMain>
       {props.children}
-    </main>
+    </StyledMain>
     <Footer />
   </>
 )
