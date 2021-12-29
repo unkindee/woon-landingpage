@@ -28,6 +28,7 @@ const Wrapper = styled.div`
     &::placeholder {
       color: #454545;
       font-size: 16px;
+      opacity: .5;
     }
 
     &:focus,
