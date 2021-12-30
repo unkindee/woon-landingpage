@@ -40,7 +40,7 @@ The app routing is done using [react-router-dom](https://www.npmjs.com/package/r
 Translations are applied using [react-i18next](https://www.npmjs.com/package/react-i18next)
    - in the i18n/config.js file updating the `showLanguages: true` flag will display the change language buttons, which, for test purposes, are currently placed near the logo
 
-   ![ Alt text](translations-sample.gif) / ! [](translations-sample.gif)
+   ![ Alt text](translations-sample.gif) [](translations-sample.gif)
 
 
 #### Components
