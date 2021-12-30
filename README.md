@@ -26,8 +26,8 @@ To see the project running:
    - contains Header, Footer and the MainLayout
 
 There are 2 generic layout components:  
-   a. MainLayout (which affects the Page layout, width etc)  
-   b. Page (which affects the section layout, width etc)  
+   a. MainLayout.js (which affects the global page layout, width etc)  
+   b. Page.js (which affects the section layout, width etc)  
 
 All the general settings (colors, links, urls, page sizes etc) are located in constants.js  
 All the shared styling can be found into /components/sharedStyle.js file
@@ -43,6 +43,14 @@ Translations are applied using [react-i18next](https://www.npmjs.com/package/rea
    ![ Alt text](translations-sample.gif) [](translations-sample.gif)
 
 
-## Components
+## Components, styling and responsiveness
 The DRY components are build with flexibility in mind. Custom props are attached so changing colors, borders etc is done on the fly.
+
+The styling is implemented using [styled-components](https://www.npmjs.com/package/styled-components)
+
+The responsiveness is implemented using Boostrap logic, having 3 breakpoints in mind (xs: '768px', sm: '992px' ,md: '1200px'). For example purposes, since no design was provided, I've adjusted the static page for phones/tablets, please see below:
+
+   ![ Alt text](responsive-sample.gif) [](responsive-sample.gif)
+
+
 
