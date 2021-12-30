@@ -26,11 +26,11 @@ To see the project running:
 5. partials
  - contains Header, Footer and the MainLayout
 
-There are 2 generic layout components:
-  a. MainLayout (which affects the Page layout, width etc)
-  b. Page (which affects the section layout, width etc)
+There are 2 generic layout components:  
+  a. MainLayout (which affects the Page layout, width etc)  
+  b. Page (which affects the section layout, width etc)  
 
-All the general settings (colors, links, urls, page sizes etc) are located in constants.js
+All the general settings (colors, links, urls, page sizes etc) are located in constants.js  
 All the shared styling can be found into /components/sharedStyle.js file
 
 ## Routes
