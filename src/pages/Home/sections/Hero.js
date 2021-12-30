@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { useTranslation, Trans } from 'react-i18next'
 import { breakPoints, mainColors } from '../../../constants'
 import Page from '../../../components/Page'
 import CustomIcon from '../../../components/CustomIcon'
@@ -9,6 +10,7 @@ import { ReactComponent as Home } from '../../../assets/icons/home.svg'
 import { ReactComponent as Chat } from '../../../assets/icons/chat.svg'
 import { ReactComponent as Wrench } from '../../../assets/icons/wrench.svg'
 import { ReactComponent as Hand } from '../../../assets/icons/hand.svg'
+import { t } from 'i18next'
 
 const StyledSection = styled.section`
   background: -webkit-image-set( url(${heroImageSmall}) 1x, url(${heroImageLarge}) 2x );
@@ -66,23 +68,25 @@ const IconsWrapper = styled.div`
 const items = [
   {
     icon: <Wrench />,
-    text: 'Reparatie melden'
+    text: t('hero.icons.icon_1')
   },
   {
     icon: <Hand />,
-    text: 'Huur betalen'
+    text: t('hero.icons.icon_2')
   },
   {
     icon: <Home />,
-    text: 'Woning zoeken'
+    text: t('hero.icons.icon_3')
   },
   {
     icon: <Chat />,
-    text: 'Overlast melden'
+    text: t('hero.icons.icon_4')
   }
 ]
 
 const Hero = () => {
+  const { t } = useTranslation()
+
   const icons = items.map(item => (
     <CustomIcon
       icon={item.icon}
@@ -96,8 +100,7 @@ const Hero = () => {
       <Page>
         <Wrapper>
           <Title>
-            Waarmee kunnen <br />
-            we je helpen?
+            <Trans>{t('hero.header')}</Trans>
           </Title>
           <IconsWrapper>
             {icons}

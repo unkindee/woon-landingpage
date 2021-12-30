@@ -1,3 +1,4 @@
+import { useTranslation, Trans } from 'react-i18next'
 import styled from 'styled-components'
 import Page from '../components/Page'
 import { sharedH4, sharedParagraph } from '../components/sharedStyles'
@@ -53,47 +54,29 @@ const Right = styled.div`
   }
 `
 
-const Footer = () => (
-  <StyledFooter>
-    <Page>
-      <Wrapper>
-        <Left>
-          <h4>
-            Wij zijn Woonplezier. <br />
-            We hebben verstand van huizen. <br />
-            En hart voor mensen.
-          </h4>
-          <p>
-            Wij zijn een woningcorporatie met ongeveer 8.000 woningen in Zaandam en omgeving. We zorgen voor goede en betaalbare woningen in een prettige buurt voor huishoudens met een smalle beurs. Kwetsbare mensen kunnen op ons rekenen, net als starters, gezinnen en alleenwonenden.
-          </p>
-          <a href='#'>Meer over Woonplezier</a>
-        </Left>
-        <Right>
-          <h4>
-            Contact
-          </h4>
-          <p>
-            <b>Bezoekadres:</b> <br />
-            Straatnaam 00 <br />
-            0000 XX Plaatsnaam
-          </p>
-          <p>
-            <b>Openingstijden:</b> <br />
-            Maandag t/m vrijdag van 9.00 tot 17.00 <br />
-            uur
-          </p>
-          <p>
-            <b>Telefoon:</b> <br />
-            000 - 000 00 00
-          </p>
-          <p>
-            <b>Email:</b> <br />
-            info@woonplezier.nu
-          </p>
-        </Right>
-      </Wrapper>
-    </Page>
-  </StyledFooter>
-)
+const Footer = () => {
+  const { t } = useTranslation()
+
+  return (
+    <StyledFooter>
+      <Page>
+        <Wrapper>
+          <Left>
+            <h4><Trans>{t('footer.left.title')}</Trans></h4>
+            <p>{t('footer.left.paragraph')}</p>
+            <a href='/'>{t('footer.left.button')}</a>
+          </Left>
+          <Right>
+            <h4>{t('footer.right.title')}</h4>
+            <p><Trans>{t('footer.right.address')}</Trans></p>
+            <p><Trans>{t('footer.right.open')}</Trans></p>
+            <p><Trans>{t('footer.right.telephone')}</Trans></p>
+            <p><Trans>{t('footer.right.email')}</Trans></p>
+          </Right>
+        </Wrapper>
+      </Page>
+    </StyledFooter>
+  )
+}
 
 export default Footer

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { useTranslation } from 'react-i18next'
 import { breakPoints, mainColors } from '../../../constants'
 import Page from '../../../components/Page'
 import ArticlePreview from '../../../components/ArticlePreview'
@@ -70,6 +71,8 @@ const ButtonWrapper = styled.div`
 `
 
 const Articles = () => {
+  const { t } = useTranslation()
+
   const articles = items.map(item => (
     <ArticlePreview
       icon={item.image}
@@ -83,13 +86,13 @@ const Articles = () => {
   return (
     <StyledSection>
       <Page>
-        <h4>Actueel</h4>
+        <h4>{t('articles.section_title')}</h4>
         <ArticlesWrapper>
           {articles}
         </ArticlesWrapper>
         <ButtonWrapper>
           <TextButton
-            text='Meer nieuwsberichten'
+            text={t('buttons.more_items')}
             color={mainColors.darkBlue}
             colorHover={mainColors.green}
             background='transparent'

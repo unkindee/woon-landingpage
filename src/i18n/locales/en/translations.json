@@ -1,0 +1,47 @@
+{
+  "mainMenu": {
+    "ik_huur": "I rent",
+    "ik_zoek": "Looking for places",
+    "projecten": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "header": "How can we <br /> help you?",
+    "icons": {
+      "icon_1": "Reparatie melden",
+      "icon_2": "Huur betalen",
+      "icon_3": "Woning zoeken",
+      "icon_4": "Overlast melden"
+    }
+  },
+  "construction": {
+    "small_title": "NEW CONSTRUCTION",
+    "section_title": "Binnenkort in de verkoop",
+    "section_paragraph": "Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.",
+    "section_anchor": "Bekijk dit project"
+  },
+  "articles": {
+    "section_title": "Articles"
+  },
+  "footer": {
+    "left": {
+      "title": "Wij zijn Woonplezier. <br /> We hebben verstand van huizen. <br /> En hart voor mensen.",
+      "paragraph": "Wij zijn een woningcorporatie met ongeveer 8.000 woningen in Zaandam en omgeving. We zorgen voor goede en betaalbare woningen in een prettige buurt voor huishoudens met een smalle beurs. Kwetsbare mensen kunnen op ons rekenen, net als starters, gezinnen en alleenwonenden.",
+      "button": "Meer over Woonplezier"
+    },
+    "right": {
+      "title": "Contact",
+      "address": "<strong>Bezoekadres:</strong> <br /> Straatnaam 00 <br /> 0000 XX Plaatsnaam",
+      "open": "<strong>Openingstijden:</strong> <br /> Maandag t/m vrijdag van 9.00 tot 17.00 <br /> uur",
+      "telephone": "<strong>Telefoon:</strong> <br /> 000 - 000 00 00",
+      "email": "<strong>Email:</strong> <br />info@woonplezier.nu"
+    }
+  },
+  "search": {
+    "placeholder": "Search..."
+  },
+  "buttons": {
+    "login": "Login",
+    "more_items": "More items"
+  }
+}

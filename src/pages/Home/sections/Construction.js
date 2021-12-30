@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { useTranslation } from 'react-i18next'
 import { breakPoints, mainColors } from '../../../constants'
 import Page from '../../../components/Page'
 
@@ -91,28 +92,28 @@ const Right = styled.div`
   }
 `
 
-const Construction = () => (
-  <StyledSection>
-    <Page>
-      <PageContainer>
-        <h3>NIEUWBOUW</h3>
-        <Wrapper>
-          <Left>
-            <h4>Binnenkort in de verkoop</h4>
-            <p>
-              Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
-            </p>
-            <a href='#'>
-              Bekijk dit project
-            </a>
-          </Left>
-          <Right>
-            <img src={houseSmall} srcSet={`${houseSmall} 1x, ${houseLarge} 2x`} alt='house' />
-          </Right>
-        </Wrapper>
-      </PageContainer>
-    </Page>
-  </StyledSection>
-)
+const Construction = () => {
+  const { t } = useTranslation()
+
+  return (
+    <StyledSection>
+      <Page>
+        <PageContainer>
+          <h3>{t('construction.small_title')}</h3>
+          <Wrapper>
+            <Left>
+              <h4>{t('construction.section_title')}</h4>
+              <p>{t('construction.section_paragraph')}</p>
+              <a href='/'>{t('construction.section_anchor')}</a>
+            </Left>
+            <Right>
+              <img src={houseSmall} srcSet={`${houseSmall} 1x, ${houseLarge} 2x`} alt='house' />
+            </Right>
+          </Wrapper>
+        </PageContainer>
+      </Page>
+    </StyledSection>
+  )
+}
 
 export default Construction
