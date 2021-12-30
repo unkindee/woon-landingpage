@@ -35,13 +35,13 @@ All the components have generic props (color, border etc), so applying different
 
 ```
 <TextButton
-  text={t('buttons.more_items')}
-  color={mainColors.darkBlue}
-  colorHover={mainColors.green}
+  text='test'
+  color='blue'
+  colorHover='lightblue'
   background='transparent'
-  backgroundHover='rgba(32, 132, 125, .1)'
-  border={`1px solid ${mainColors.neonBlue}`}
-  borderHover={`1px solid ${mainColors.green}`}
+  backgroundHover='transparent'
+  border='1px solid blue'
+  borderHover='1px solid lightblue'
 />
 ```
 
