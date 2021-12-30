@@ -35,7 +35,7 @@ All the shared styling can be found into /components/sharedStyle.js file
 
 ## Routes
 1. The app routing is done using [react-router-dom] (https://www.npmjs.com/package/react-router-dom)
-  - you can see it in action by clicking the menu items (you will see the same shared header, footer but different bodies)
+   - you can see it in action by clicking the menu items (you will see the same shared header, footer but different bodies)
 
   
 
