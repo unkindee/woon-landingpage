@@ -33,10 +33,10 @@ All the general settings (colors, links, urls, page sizes etc) are located in co
 All the shared styling can be found into /components/sharedStyle.js file
 
 ## Routes
-The app routing is done using [react-router-dom] (https://www.npmjs.com/package/react-router-dom)
+The app routing is done using [react-router-dom](https://www.npmjs.com/package/react-router-dom)
   - you can see it in action by clicking the menu items (you will see the same shared header, footer but different bodies)
 
 ### Translations
-Translations are applied using [react-i18next] (https://www.npmjs.com/package/react-i18next)
+Translations are applied using [react-i18next](https://www.npmjs.com/package/react-i18next)
    - in the i18n/config.js file updating the `showLanguages: true` flag will display the change language buttons, which, for test purposes, are currently placed near the logo
 
