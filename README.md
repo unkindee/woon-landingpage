@@ -23,11 +23,11 @@ To see the project running:
   Page -> Sections -> Components
 
 5. partials
-  - contains Header, Footer and the MainLayout
+   - contains Header, Footer and the MainLayout
 
 There are 2 generic layout components:  
-  a. MainLayout (which affects the Page layout, width etc)  
-  b. Page (which affects the section layout, width etc)  
+   a. MainLayout (which affects the Page layout, width etc)  
+   b. Page (which affects the section layout, width etc)  
 
 All the general settings (colors, links, urls, page sizes etc) are located in constants.js  
 All the shared styling can be found into /components/sharedStyle.js file
