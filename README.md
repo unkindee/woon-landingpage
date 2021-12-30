@@ -31,6 +31,17 @@ There are 2 generic layout components:
 
 All the general settings (colors, links, urls, page sizes etc) are located in constants.js  
 All the shared styling can be found into /components/sharedStyle.js file
+All the components have generic props (color, border etc), so applying different styles and reusing it is no problem. For example, adding a text button would look like this:
+
+`<TextButton
+  text={t('buttons.more_items')}
+  color={mainColors.darkBlue}
+  colorHover={mainColors.green}
+  background='transparent'
+  backgroundHover='rgba(32, 132, 125, .1)'
+  border={`1px solid ${mainColors.neonBlue}`}
+  borderHover={`1px solid ${mainColors.green}`}
+/>`
 
 ## Routes
 The app routing is done using [react-router-dom](https://www.npmjs.com/package/react-router-dom)
