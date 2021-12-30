@@ -51,7 +51,7 @@ const ImageWrapper = styled.div`
 
 const ArticlePreview = ({ icon, date, title, paragraph }) => (
   <Wrapper>
-    <a href='#'>
+    <a href='/'>
       <ImageWrapper>
         <img src={icon} alt='Article' />
       </ImageWrapper>
