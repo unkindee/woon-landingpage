@@ -13,18 +13,18 @@ To see the project running:
    - contains all the project assets (images, fonts etc)
 
 2. components
-  - contains all the reusable components that are used within a page (buttons, article items etc)
+   - contains all the reusable components that are used within a page (buttons, article items etc)
 
 3. i18n 
-  - contains all the static strings used on the page(supports front end translations)
-  - in the i18n/config.js file updating the `showLanguages: true` flag will display the change language buttons, which, for test purposes, are currently placed near the logo
+   - contains all the static strings used on the page(supports front end translations)
+   - in the i18n/config.js file updating the `showLanguages: true` flag will display the change language buttons, which, for test purposes, are currently placed near the logo
 
 4. pages
-  - contains all the pages(what the route loads). A page is destructured into smaller sections. The tree structure looks like this:
+   - contains all the pages(what the route loads). A page is destructured into smaller sections. The tree structure looks like this:
   Page -> Sections -> Components
 
 5. partials
- - contains Header, Footer and the MainLayout
+  - contains Header, Footer and the MainLayout
 
 There are 2 generic layout components:  
   a. MainLayout (which affects the Page layout, width etc)  
@@ -35,7 +35,7 @@ All the shared styling can be found into /components/sharedStyle.js file
 
 ## Routes
 1. The app routing is done using [react-router-dom] (https://www.npmjs.com/package/react-router-dom)
- - you can see it in action by clicking the menu items (you will see the same shared header, footer but different bodies)
+  - you can see it in action by clicking the menu items (you will see the same shared header, footer but different bodies)
 
   
 
