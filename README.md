@@ -10,7 +10,7 @@ To see the project running:
 ## Project Structure
 
 1. assets 
-  - contains all the project assets (images, fonts etc)
+   - contains all the project assets (images, fonts etc)
 
 2. components
   - contains all the reusable components that are used within a page (buttons, article items etc)
