@@ -14,7 +14,8 @@ export const mainColors = {
   neonBlue: '#0a86f4',
   darkBlue: '#054175',
   grayBorder: '#DCDCDC',
-  lightBorder: '#DDDDDD'
+  lightBorder: '#DDDDDD',
+  green: '#20847D'
 }
 
 export const sizes = {

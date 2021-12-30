@@ -91,8 +91,11 @@ const Articles = () => {
           <TextButton
             text='Meer nieuwsberichten'
             color={mainColors.darkBlue}
+            colorHover={mainColors.green}
             background='transparent'
+            backgroundHover='rgba(32, 132, 125, .1)'
             border={`1px solid ${mainColors.neonBlue}`}
+            borderHover={`1px solid ${mainColors.green}`}
           />
         </ButtonWrapper>
       </Page>
